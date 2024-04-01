@@ -9,6 +9,7 @@ function App() {
   return (
     <div>
       <Routes>
+    <Route path="/frontEnd-for-Employee-App" element={<Home child={<Employeelist />} />} />
         <Route path="/" element={<Home child={<Employeelist />} />} />
         <Route path="/add" element={<Home child={<EmployeeForm />} />} />
         <Route path="/edit/:id" element={<Home child={<EditEmployee />} />} />
